@@ -1,5 +1,5 @@
 # 🌎 Geo Mundo
-<img src="assets/logo.png" width="400px">
+<img src="geomundo/assets/logo.png" width="400px">
 
 ## Equipe
 
