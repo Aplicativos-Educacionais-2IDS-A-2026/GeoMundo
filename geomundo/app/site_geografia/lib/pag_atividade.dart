@@ -8,18 +8,20 @@ class PagAtividade extends StatefulWidget {
   const PagAtividade({super.key});
 
   @override
+  //cria um estado para a página que pode mudar
   State<PagAtividade> createState() => _PagAtividadeState();
 }
 
 class _PagAtividadeState extends State<PagAtividade> {
 
   String? nivelSelecionado; // guarda o nível escolhido
-  int perguntaAtual = 0;
-  int pontuacao = 0;
+  int perguntaAtual = 0; //inicia as perguntas
+  int pontuacao = 0; //inicia a pontuação
   bool respondeu = false; // controla se já respondeu a pergunta
 
   // perguntas separadas por nível
-  final Map<String, List<Map<String, Object>>> perguntas = {
+  //armazena as perguntas em arrays
+  final Map<String, List<Map<String, Object>>> perguntas = { 
 
     'Fácil': [
       {
@@ -132,7 +134,7 @@ class _PagAtividadeState extends State<PagAtividade> {
   void responder(bool correta) {
     if (respondeu) return; // evita clicar várias vezes
 
-    setState(() {
+    setState(() { //define o estado como: se a resposta foi TRUE(correta), a pontuação aumenta
       respondeu = true;
       if (correta) pontuacao++;
     });

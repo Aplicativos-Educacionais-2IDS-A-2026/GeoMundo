@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 class RioPage extends StatelessWidget {
   final String teste;
-
+  //define e usa uma variavel para receber um CONTEXT(context) do main.dart e conectar as páginas
   const RioPage({super.key, required this.teste});
 
   @override
@@ -12,7 +12,7 @@ class RioPage extends StatelessWidget {
         title: const Text("Principais Rios"),
         backgroundColor: Colors.blue,
       ),
-
+      //permite a scrollagem
       body: SingleChildScrollView(
         child: Column(
           children: [

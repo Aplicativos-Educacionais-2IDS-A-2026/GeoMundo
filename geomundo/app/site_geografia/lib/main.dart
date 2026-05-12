@@ -1,9 +1,13 @@
+//Importa os componentes visuais do Flutter, tudo que é interface gráfica vem daqui.
 import 'package:flutter/material.dart';
+
+//Importa as outras telas do projeto.
 import 'package:site_geografia/pag_atividade.dart';
 import 'package:site_geografia/pag_conteudo.dart';
 import 'package:site_geografia/sobre.dart';
 import 'package:site_geografia/pag_detalhes.dart';
 
+//É o ponto de início do aplicativo.
 void main() {
   runApp(const MainApp());
 }
@@ -11,14 +15,17 @@ void main() {
 class MainApp extends StatelessWidget {
   const MainApp({super.key});
 
+  //Interface visual
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      //Tira a faixa do debug
       debugShowCheckedModeBanner: false,
       title: 'GeoMundo',
 
       theme: ThemeData(primaryColor: Color(0xFF2E7D32), useMaterial3: true),
 
+      //Define qual tela abre primeiro.
       home: const PagInicialWrapper(),
     );
   }
@@ -29,6 +36,7 @@ class PagInicialWrapper extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    //Cria a estrutura da página:
     return Scaffold(
       body: Stack(
         // permite sobrepor o fundo e o conteúdo

@@ -16,22 +16,10 @@ class Sobre extends StatelessWidget {
   Widget build(BuildContext context) {
     // Lista dos integrantes
     final List<Map<String, String>> integrantes = [
-      {
-        'nome': 'Fernanda Machado',
-        'foto': 'assets/fernanda.jpg',
-      },
-      {
-        'nome': 'Laura Ubaldo',
-        'foto': 'assets/laura.jpg',
-      },
-      {
-        'nome': 'Sophia Peron',
-        'foto': 'assets/sophia.jpg',
-      },
-      {
-        'nome': 'Yasmin Francischelli',
-        'foto': 'assets/yasmin.jpg',
-      },
+      {'nome': 'Fernanda Machado', 'foto': 'assets/fernanda.jpg'},
+      {'nome': 'Laura Ubaldo', 'foto': 'assets/laura.jpg'},
+      {'nome': 'Sophia Peron', 'foto': 'assets/sophia.jpg'},
+      {'nome': 'Yasmin Francischelli', 'foto': 'assets/yasmin.jpg'},
     ];
 
     return Scaffold(
@@ -41,112 +29,102 @@ class Sobre extends StatelessWidget {
       ),
       body: SingleChildScrollView(
         padding: const EdgeInsets.all(20),
-        child: Column(
-          children: [
-            Text(
-              nomeApp,
-              style: const TextStyle(
-                fontSize: 30,
-                fontWeight: FontWeight.bold,
+        child: Center(
+          child: Column(
+            children: [
+              Text(
+                nomeApp,
+                style: const TextStyle(
+                  fontSize: 30,
+                  fontWeight: FontWeight.bold,
+                ),
               ),
-            ),
 
-            const SizedBox(height: 20),
+              const SizedBox(height: 20),
 
-            Text(
-              'Disciplina escolhida: $disciplina',
-              style: const TextStyle(fontSize: 18),
-            ),
-
-            const SizedBox(height: 10),
-
-            Text(
-              'Turma: $turma do SESI CE-370',
-              style: const TextStyle(fontSize: 18),
-            ),
-
-            const SizedBox(height: 20),
-
-            const Text(
-              'Objetivo do App',
-              style: TextStyle(
-                fontSize: 22,
-                fontWeight: FontWeight.bold,
+              Text(
+                'Disciplina escolhida: $disciplina',
+                style: const TextStyle(fontSize: 18),
               ),
-            ),
 
-            const SizedBox(height: 10),
+              const SizedBox(height: 10),
 
-            const Text(
-              'O aplicativo GeoMundo foi desenvolvido com o objetivo de auxiliar os estudantes no aprendizado de Geografia de forma interativa e educativa.',
-              textAlign: TextAlign.center,
-              style: TextStyle(fontSize: 16),
-            ),
-
-            const SizedBox(height: 30),
-
-            const Text(
-              'Integrantes do Grupo',
-              style: TextStyle(
-                fontSize: 22,
-                fontWeight: FontWeight.bold,
+              Text(
+                'Turma: $turma do SESI CE-370',
+                style: const TextStyle(fontSize: 18),
               ),
-            ),
 
-            const SizedBox(height: 20),
+              const SizedBox(height: 20),
 
-            // Fotos dos integrantes
-            Wrap(
-              spacing: 20,
-              runSpacing: 20,
-              alignment: WrapAlignment.center,
-              children: integrantes.map((integrante) {
-                return Column(
-                  children: [
-                    CircleAvatar(
-                      radius: 50,
-                      backgroundImage:
-                          AssetImage(integrante['foto']!),
-                    ),
+              const Text(
+                'Objetivo do App',
+                style: TextStyle(fontSize: 22, fontWeight: FontWeight.bold),
+              ),
 
-                    const SizedBox(height: 8),
+              const SizedBox(height: 10),
 
-                    Text(
-                      integrante['nome']!,
-                      style: const TextStyle(
-                        fontWeight: FontWeight.bold,
+              const Text(
+                'O aplicativo GeoMundo foi desenvolvido com o objetivo de auxiliar os estudantes no aprendizado de Geografia de forma interativa e educativa.',
+                textAlign: TextAlign.center,
+                style: TextStyle(fontSize: 16),
+              ),
+
+              const SizedBox(height: 30),
+
+              const Text(
+                'Integrantes do Grupo',
+                style: TextStyle(fontSize: 22, fontWeight: FontWeight.bold),
+              ),
+
+              const SizedBox(height: 20),
+
+              // Fotos dos integrantes
+              Wrap(
+                spacing: 20,
+                runSpacing: 20,
+                alignment: WrapAlignment.center,
+                children: integrantes.map((integrante) {
+                  return Column(
+                    children: [
+                      CircleAvatar(
+                        radius: 50,
+                        backgroundImage: AssetImage(integrante['foto']!),
                       ),
-                    ),
-                  ],
-                );
-              }).toList(),
-            ),
 
-            const SizedBox(height: 30),
+                      const SizedBox(height: 8),
 
-            const Text(
-              'Professor: Gabriel Evaristo',
-              style: TextStyle(fontSize: 18),
-            ),
-
-            const SizedBox(height: 20),
-
-            const Text(
-              'Tecnologias Utilizadas',
-              style: TextStyle(
-                fontSize: 22,
-                fontWeight: FontWeight.bold,
+                      Text(
+                        integrante['nome']!,
+                        style: const TextStyle(fontWeight: FontWeight.bold),
+                      ),
+                    ],
+                  );
+                }).toList(),
               ),
-            ),
 
-            const SizedBox(height: 10),
+              const SizedBox(height: 30),
 
-            const Text(
-              'Foram utilizados o Visual Studio Code e a linguagem Flutter para o desenvolvimento do aplicativo educacional GeoMundo.',
-              textAlign: TextAlign.center,
-              style: TextStyle(fontSize: 16),
-            ),
-          ],
+              const Text(
+                'Professor: Gabriel Evaristo',
+                style: TextStyle(fontSize: 18),
+              ),
+
+              const SizedBox(height: 20),
+
+              const Text(
+                'Tecnologias Utilizadas',
+                style: TextStyle(fontSize: 22, fontWeight: FontWeight.bold),
+              ),
+
+              const SizedBox(height: 10),
+
+              const Text(
+                'Foram utilizados o Visual Studio Code e a linguagem Flutter para o desenvolvimento do aplicativo educacional GeoMundo.',
+                textAlign: TextAlign.center,
+                style: TextStyle(fontSize: 16),
+              ),
+            ],
+          ),
         ),
       ),
     );

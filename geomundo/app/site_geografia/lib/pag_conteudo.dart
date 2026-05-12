@@ -41,6 +41,7 @@ class PagConteudo extends StatelessWidget {
             child: ListTile(
               title: const Text("Rio Amazonas"),
               subtitle: const Text("O Rio Amazonas é o maior rio do mundo em volume de água e um dos mais extensos. Ele nasce na Cordilheira dos Andes, no Peru, e atravessa a região Norte do Brasil até desaguar no Oceano Atlântico."),
+              //on tap == quando for clicado
               onTap: () {
                 mostrarDetalhes(
                   context,
@@ -64,6 +65,7 @@ class PagConteudo extends StatelessWidget {
             child: ListTile(
               title: const Text("Rio Paraná"),
               subtitle: const Text("O Rio Paraná é um dos principais rios da América do Sul. Ele nasce da união dos rios Grande e Paranaíba e percorre vários estados brasileiros, sendo importante para a geração de energia."),
+              //on tap == quando for clicado
               onTap: () {
                 mostrarDetalhes(
                   context,
@@ -87,6 +89,7 @@ class PagConteudo extends StatelessWidget {
             child: ListTile(
               title: const Text("Rio Madeira"),
               subtitle: const Text("O Rio Madeira é um dos maiores afluentes do Rio Amazonas. Ele atravessa a Amazônia e possui grande importância econômica e ambiental."),
+              //on tap == quando for clicado
               onTap: () {
                 mostrarDetalhes(
                   context,
@@ -110,6 +113,7 @@ class PagConteudo extends StatelessWidget {
             child: ListTile(
               title: const Text("Rio Purus"),
               subtitle: const Text("O Rio Purus é um importante afluente do Rio Amazonas. Seu percurso possui muitas curvas e atravessa áreas preservadas da floresta amazônica."),
+              //on tap == quando for clicado
               onTap: () {
                 mostrarDetalhes(
                   context,
@@ -133,6 +137,7 @@ class PagConteudo extends StatelessWidget {
             child: ListTile(
               title: const Text("Rio São Francisco"),
               subtitle: const Text("O Rio São Francisco é um dos rios mais importantes do Brasil. Ele atravessa diversas regiões e é conhecido como 'Velho Chico'."),
+              //on tap == quando for clicado
               onTap: () {
                 mostrarDetalhes(
                   context,
@@ -156,6 +161,7 @@ class PagConteudo extends StatelessWidget {
             child: ListTile(
               title: const Text("Rio Tocantins"),
               subtitle: const Text("O Rio Tocantins é um importante rio brasileiro que atravessa o Centro-Oeste e o Norte do país, sendo muito utilizado para geração de energia."),
+              //on tap == quando for clicado
               onTap: () {
                 mostrarDetalhes(
                   context,
@@ -179,6 +185,7 @@ class PagConteudo extends StatelessWidget {
             child: ListTile(
               title: const Text("Rio Araguaia"),
               subtitle: const Text("O Rio Araguaia é um dos rios mais importantes do Brasil Central. Ele forma a maior ilha fluvial do mundo, a Ilha do Bananal."),
+              //on tap == quando for clicado
               onTap: () {
                 mostrarDetalhes(
                   context,
@@ -202,6 +209,7 @@ class PagConteudo extends StatelessWidget {
             child: ListTile(
               title: const Text("Rio Japurá"),
               subtitle: const Text("O Rio Japurá é um importante afluente do Rio Amazonas e atravessa áreas de grande biodiversidade na Amazônia."),
+              //on tap == quando for clicado
               onTap: () {
                 mostrarDetalhes(
                   context,
@@ -225,6 +233,7 @@ class PagConteudo extends StatelessWidget {
             child: ListTile(
               title: const Text("Bacias Hidrográficas"),
               subtitle: const Text("As bacias hidrográficas são áreas drenadas por um rio principal e seus afluentes. Elas são fundamentais para o abastecimento de água e geração de energia."),
+              //on tap == quando for clicado
               onTap: () {
                 mostrarDetalhes(
                   context,
