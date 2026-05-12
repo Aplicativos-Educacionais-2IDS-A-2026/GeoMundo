@@ -5,10 +5,10 @@
 
 | Nome | Função |
 |------|---------|
-| Yasmin Francischelli |<img src="geomundo/assets/yasmin.jpg">
-| Laura Ubaldo |<img src="geomundo/assets/laura.png">
-| Sophia Peron |<img src="geomundo/assets/sophia.jpg">
-| Fernanda Machado |<img src="geomundo/assets/fernanda.jpg">
+| Yasmin Francischelli |<img src="geomundo/assets/yasmin.jpg" width="15%">
+| Laura Ubaldo |<img src="geomundo/assets/laura.jpg" width="15%">
+| Sophia Peron |<img src="geomundo/assets/sophia.jpg" width="15%">
+| Fernanda Machado |<img src="geomundo/assets/fernanda.jpg" width="15%">
 
 ---
 
