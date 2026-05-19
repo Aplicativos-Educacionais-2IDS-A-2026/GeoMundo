@@ -121,9 +121,9 @@ class _PagAtividadeState extends State<PagAtividade> {
       {
         'pergunta':'Pelo quê o rio Japurá é conhecido?',
         'respostas':[
-          {'texto':'abc', 'correta':false},
-          {'texto':'Guiana Francesa','correta':false},
-          {'texto':'Peru','correta':true},
+          {'texto':'Relevância econômica na pesca', 'correta':false},
+          {'texto':'Grande extensão e profundidade','correta':false},
+          {'texto':'Áreas alagadas e rica fauna','correta':true},
         ]
       }
 
